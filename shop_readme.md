@@ -29,23 +29,23 @@
 ![](http://ww1.sinaimg.cn/large/005U6dysly1gj3wflced1j31h40pvwh2.jpg)
 
 ###  三、搭建
-####### 1. 下载源码
+###### 1. 下载源码
 将给你的源码上传到服务器上
-####### 2. 下载宝塔
+###### 2. 下载宝塔
 到[宝塔官网](https://www.bt.cn/)，根据是windows服务器还是linux下载对应的宝塔版本
-####### 3. 下载安装
+###### 3. 下载安装
 nginx、mysql、php7、phpMyAdmin、FileZilla Server
 ![宝塔  已安装软件.png](http://ww1.sinaimg.cn/large/005U6dysly1gj3yze6ng2j31bw0pgaci.jpg)
-####### 4. 创建网站
+###### 4. 创建网站
 ![宝塔  创建网站.png](http://ww1.sinaimg.cn/large/005U6dysly1gj43b8u5poj30hu0jkmxu.jpg)
 按照提示，将各项逐一填写
-####### 5. 配置网站
+###### 5. 配置网站
 - 域名管理 确认域名填写正确， 填写两个域名，一个是前缀带www的，一个不带。
 - 网站目录->网站目录 设置为public并保存
 - 伪静态 设置为thinkphp并保存
 - 默认文档 设置将index.html放在第一行并保存
 - SSL 可以注册宝塔账号来获取SSL
-####### 5. 修改数据库配置
+###### 6. 修改数据库配置
 打开源码下面的config/database.php
 ```
 修改hostname、database、username、password这几个字段
@@ -54,7 +54,7 @@ database: 创建网站对应的那个数据库
 username：可以使用创建网站时同时创建的那个用户名，也可以使用root用户
 password：用户名对应的那个密码
 ```
-####### 6. 计划任务
+###### 7. 计划任务
 访问URL，执行周期为每1分钟，访问内容为：http://域名/closeOrder
 
 ### 四、搭建和使用视频
